@@ -1,0 +1,423 @@
+taha@taha-ThinkPad-T495s:~/linux_lab$ echo $$
+17356
+taha@taha-ThinkPad-T495s:~/linux_lab$ echo $PPID
+13822
+taha@taha-ThinkPad-T495s:~/linux_lab$ ps -p $PPID -o comm=
+ptyxis-agent
+taha@taha-ThinkPad-T495s:~/linux_lab$ ps aux --sort=-%mem
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+taha       15724  2.3  2.2 2387388 306800 ?      Sl   17:34   3:24 /usr/bin/papers /home/taha/Downloads/Linux_Shell_Lab3_Student.pdf
+taha        3496  2.7  2.1 7156508 290332 ?      Rsl  12:21  12:25 /usr/bin/gnome-shell --mode=ubuntu
+taha       13813  0.4  1.0 2607588 144840 ?      Sl   13:07   1:46 /usr/bin/ptyxis --gapplication-service
+taha        3882  0.0  0.8 1349132 120500 ?      Ssl  12:21   0:12 /usr/libexec/xdg-desktop-portal-gnome
+taha       17028  0.1  0.6 3226508 86616 ?       Sl   19:46   0:00 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share/gnome-shell/extensions/ding@
+taha        3667  0.0  0.4 998660 67144 ?        Sl   12:21   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+root       13286  0.0  0.3 515264 50372 ?        Ssl  12:54   0:03 /usr/libexec/fwupd/fwupd
+taha        3589  0.0  0.3 1233148 46252 ?       Ssl  12:21   0:00 /usr/libexec/evolution-source-registry
+root        1266  0.0  0.3 2329596 42752 ?       Ssl  12:21   0:02 /usr/lib/snapd/snapd
+taha        4588  0.0  0.2 440020 36252 ?        Sl   12:22   0:00 /snap/snapd-desktop-integration/391/usr/bin/snapd-desktop-integration
+taha        3790  0.0  0.2 509640 35456 ?        Sl   12:21   0:05 /usr/libexec/ibus-extension-gtk3
+taha        3713  0.0  0.2 653244 34196 ?        Sl   12:21   0:01 /usr/bin/update-notifier
+taha        5515  0.0  0.2  56092 33404 ?        S    12:22   0:00 python3 /usr/bin/wsdd --no-host --discovery --listen /run/user/1000/gvfsd/wsdd
+root        1686  0.0  0.2 137384 32400 ?        Ssl  12:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+taha        3823  0.0  0.2 478060 32124 ?        Sl   12:21   0:00 /usr/libexec/goa-daemon
+taha        3599  0.0  0.2 2746644 32028 ?       Sl   12:21   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+taha        3780  0.0  0.2 2746688 31984 ?       Sl   12:21   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+taha        3903  0.0  0.2 837272 31184 ?        Ssl  12:21   0:00 /usr/libexec/evolution-addressbook-factory
+taha        3847  0.0  0.2 888184 30676 ?        SNsl 12:21   0:02 /usr/libexec/localsearch-3
+root        1246  0.0  0.2  58112 29636 ?        Ss   12:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+taha        7016  0.0  0.2 1951656 27616 ?       Sl   12:44   0:00 /usr/bin/snap userd
+taha        4353  0.0  0.2 501984 27440 ?        Ssl  12:22   0:00 /usr/libexec/xdg-desktop-portal-gtk
+taha        3883  0.0  0.1 1379772 26840 ?       Ssl  12:21   0:00 /usr/libexec/evolution-calendar-factory
+taha        3081  0.0  0.1 574532 24324 ?        S<sl 12:21   0:08 /usr/bin/wireplumber
+root         433  0.0  0.1  67364 23968 ?        S<s  12:21   0:01 /usr/lib/systemd/systemd-journald
+cups-br+   13006  0.0  0.1 207540 22380 ?        Ssl  12:52   0:00 /usr/sbin/cups-browsed
+root        1467  0.0  0.1 347856 21920 ?        Ssl  12:21   0:02 /usr/sbin/NetworkManager --no-daemon
+taha        3852  0.0  0.1 640516 20912 ?        Ssl  12:21   0:01 /usr/libexec/xdg-desktop-portal
+taha        3581  0.0  0.1 658736 19400 ?        Sl   12:21   0:00 /usr/libexec/gnome-shell-calendar-server
+taha        3073  0.0  0.1 121716 16684 ?        S<sl 12:21   0:04 /usr/bin/pipewire
+root           1  0.0  0.1  26172 16624 ?        Ss   12:21   0:06 /usr/lib/systemd/systemd --switched-root --system --deserialize=52 splash
+colord      2073  0.0  0.1 329052 16564 ?        Ssl  12:21   0:00 /usr/libexec/colord
+root        1295  0.0  0.1 544212 16496 ?        Ssl  12:21   0:02 /usr/libexec/udisks2/udisksd
+taha        3093  0.0  0.1 199184 16352 ?        S<Lsl 12:21   0:02 /usr/bin/pipewire-pulse
+taha        3028  0.0  0.1  24312 15452 ?        Ss   12:21   0:05 /usr/lib/systemd/systemd --user
+root         486  0.0  0.1  41552 14800 ?        Ss   12:21   0:01 /usr/lib/systemd/systemd-udevd
+taha        3637  0.0  0.1 627232 14724 ?        Ssl  12:21   0:00 /usr/libexec/gsd-power
+systemd+     483  0.0  0.1  22680 14612 ?        Ss   12:21   0:02 /usr/lib/systemd/systemd-resolved
+taha        3635  0.0  0.1 481044 14500 ?        Ssl  12:21   0:00 /usr/libexec/gsd-media-keys
+taha        3640  0.0  0.1 338848 14436 ?        Ssl  12:21   0:00 /usr/libexec/gsd-print-notifications
+root        1560  0.0  0.1 317984 13836 ?        Ssl  12:21   0:00 /usr/sbin/ModemManager
+root        1469  0.0  0.0  19008 13044 ?        Ss   12:21   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root       13004  0.0  0.0  40752 12988 ?        Ss   12:52   0:00 /usr/sbin/cupsd -l
+taha        3655  0.0  0.0 478628 12824 ?        Ssl  12:21   0:00 /usr/libexec/gsd-sharing
+root        2104  0.0  0.0 331120 12648 ?        Ssl  12:21   0:06 /usr/libexec/upowerd
+taha        3850  0.0  0.0 418956 12412 ?        Sl   12:21   0:00 /usr/libexec/gsd-printer
+polkitd     1250  0.0  0.0 397856 12408 ?        Ssl  12:21   0:01 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+taha        3626  0.0  0.0 271384 12400 ?        Ssl  12:21   0:00 /usr/libexec/gsd-datetime
+taha        3910  0.0  0.0 472044 11880 ?        Ssl  12:21   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+taha        3617  0.0  0.0 396800 11696 ?        Ssl  12:21   0:16 /usr/bin/ibus-daemon --panel disable
+taha        3465  0.0  0.0 550816 11388 ?        Ssl  12:21   0:00 /usr/libexec/gnome-session-service --session=ubuntu
+root        2895  0.0  0.0 397160 11276 ?        Sl   12:21   0:00 gdm-session-worker [pam/gdm-password]
+taha        3077  0.0  0.0 194524 10836 ?        SLsl 12:21   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+taha        5491  0.0  0.0 399088 10800 ?        Sl   12:22   0:00 /usr/libexec/gvfsd-recent --spawner :1.21 /org/gtk/gvfs/exec_spaw/1
+taha        3629  0.0  0.0 402068 10776 ?        Ssl  12:21   0:00 /usr/libexec/gsd-housekeeping
+taha        3671  0.0  0.0 401636 10640 ?        Ssl  12:21   0:00 /usr/libexec/gsd-wwan
+taha        3660  0.0  0.0 266172 10560 ?        Ssl  12:21   0:00 /usr/libexec/gsd-sound
+taha        3623  0.0  0.0 265020 10536 ?        Ssl  12:21   0:00 /usr/libexec/gsd-a11y-settings
+root        1724  0.0  0.0 395864 10496 ?        Ssl  12:21   0:00 /usr/sbin/gdm3
+taha        3625  0.0  0.0 262856 10376 ?        Ssl  12:21   0:00 /usr/libexec/gsd-color
+taha        3871  0.0  0.0 399216 10280 ?        Sl   12:21   0:00 /usr/libexec/goa-identity-service
+taha       13386  0.0  0.0  37192 10104 ?        S    12:55   0:00 /usr/lib/speech-dispatcher-modules/sd_espeak-ng /etc/speech-dispatcher/modules/espeak-ng.conf
+root        1290  0.0  0.0  19060 10092 ?        Ss   12:21   0:01 /usr/lib/systemd/systemd-logind
+taha        4170  0.0  0.0 619512 10068 ?        Sl   12:21   0:00 /usr/libexec/gvfsd-trash --spawner :1.21 /org/gtk/gvfs/exec_spaw/0
+taha       13425  0.0  0.0  37296 10048 ?        S    12:55   0:00 /usr/lib/speech-dispatcher-modules/sd_espeak-ng /etc/speech-dispatcher/modules/
+taha        5492  0.0  0.0 398540  9936 ?        Sl   12:22   0:00 /usr/libexec/gvfsd-network --spawner :1.21 /org/gtk/gvfs/exec_spaw/2
+taha        3663  0.0  0.0 475240  9932 ?        Ssl  12:21   0:00 /usr/libexec/gsd-usb-protection
+taha        5504  0.0  0.0 399556  9828 ?        Sl   12:22   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.21 /org/gtk/gvfs/exec_spaw/3
+taha        3651  0.0  0.0 312172  9788 ?        Sl   12:21   0:00 /usr/libexec/gsd-disk-utility-notify
+taha       13366  0.0  0.0 131572  9688 ?        Ssl  12:55   0:00 /usr/bin/speech-dispatcher -s -t 0
+taha        3658  0.0  0.0 396936  9536 ?        Ssl  12:21   0:00 /usr/libexec/gsd-smartcard
+taha        3924  0.0  0.0 401156  9444 ?        Ssl  12:21   0:01 /usr/libexec/gvfs-afc-volume-monitor
+taha        3216  0.0  0.0 175072  9432 tty2     Sl+  12:21   0:00 /usr/libexec/gnome-session-init-worker ubuntu
+taha        5510  0.0  0.0 397972  9408 ?        Sl   12:22   0:00 /usr/libexec/gvfsd-wsdd --spawner :1.21 /org/gtk/gvfs/exec_spaw/4
+taha        3163  0.0  0.0 551676  9044 ?        Ssl  12:21   0:00 /usr/libexec/xdg-document-portal
+taha        3434  0.0  0.0 324228  8816 ?        Ssl  12:21   0:00 /usr/libexec/gvfsd
+message+    1210  0.0  0.0  12004  8728 ?        Rs   12:21   0:05 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+taha       14644  0.0  0.0 215224  8584 ?        Ssl  16:13   0:00 /snap/firmware-updater/262/bin/firmware-notifier
+root        1273  0.0  0.0 320784  8292 ?        Ssl  12:21   0:00 /usr/libexec/accounts-daemon
+taha        3906  0.0  0.0 180584  8056 ?        Sl   12:21   0:05 /usr/libexec/ibus-engine-simple
+taha        3936  0.0  0.0 320260  8040 ?        Ssl  12:21   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+taha        3806  0.0  0.0 319780  7956 ?        Sl   12:21   0:00 /usr/libexec/ibus-portal
+taha        3634  0.0  0.0 394360  7948 ?        Ssl  12:21   0:00 /usr/libexec/gsd-keyboard
+taha        3646  0.0  0.0 468208  7928 ?        Ssl  12:21   0:00 /usr/libexec/gsd-rfkill
+taha       13822  0.0  0.0 240052  7856 ?        Ssl  13:07   0:03 /usr/libexec/ptyxis-agent --socket-fd=3 --rlimit-nofile=1024
+taha        3553  0.0  0.0 381068  7848 ?        Ssl  12:21   0:00 /usr/libexec/at-spi-bus-launcher
+taha        3789  0.0  0.0 180460  7848 ?        Sl   12:21   0:00 /usr/libexec/ibus-memconf
+taha        3459  0.0  0.0 409652  7800 ?        Sl   12:21   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+taha        3414  0.0  0.0  97552  7756 ?        Ssl  12:21   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+taha        3562  0.0  0.0 168688  7756 ?        Sl   12:21   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+root        2873  0.0  0.0 320564  7672 ?        Ssl  12:21   0:00 /usr/libexec/power-profiles-daemon
+taha        3946  0.0  0.0 319292  7640 ?        Ssl  12:21   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+root        1279  0.0  0.0 319280  7528 ?        Ssl  12:21   0:00 /usr/libexec/switcheroo-control
+taha        3647  0.0  0.0 181116  7520 ?        Ssl  12:21   0:00 /usr/libexec/gsd-screensaver-proxy
+taha        3072  0.0  0.0  10376  7404 ?        Ss   12:21   0:04 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+taha        4011  0.0  0.0 180248  7384 ?        Ssl  12:21   0:00 /usr/libexec/gvfsd-metadata
+systemd+     480  0.0  0.0  16808  7364 ?        Ss   12:21   0:08 /usr/lib/systemd/systemd-oomd
+root        1198  0.0  0.0  13132  7132 ?        Ss   12:21   0:00 /usr/libexec/bluetooth/bluetoothd
+taha        3941  0.0  0.0 319116  7100 ?        Ssl  12:21   0:00 /usr/libexec/gvfs-goa-volume-monitor
+taha        3167  0.0  0.0 318648  6756 ?        Ssl  12:21   0:00 /usr/libexec/xdg-permission-store
+taha        3416  0.0  0.0  10484  6700 ?        Ss   12:21   0:00 /usr/bin/ssh-agent -D
+taha       13422  0.0  0.0 165420  6660 ?        Sl   12:55   0:00 /usr/lib/speech-dispatcher-modules/sd_dummy /etc/speech-dispatcher/modules/dummy.conf
+taha        3201  0.0  0.0 179480  6640 tty2     Ssl+ 12:21   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session --session=ubuntu
+taha        4112  0.0  0.0 165352  6616 ?        Ssl  12:21   0:00 /usr/libexec/dconf-service
+taha        4494  0.0  0.0 303928  6432 ?        Ssl  12:22   0:00 /snap/snapd-desktop-integration/391/usr/bin/user-session-helper /snap/snapd-desktop-integration/391/usr/bin/snapd-d
+taha       13847  0.0  0.0  20492  6196 pts/0    Ss+  13:07   0:00 /usr/bin/bash
+_chrony     1447  0.0  0.0  20424  6132 ?        S    12:21   0:00 /usr/sbin/chronyd -n -F 1
+syslog      1383  0.0  0.0 220604  5932 ?        Ssl  12:21   0:00 /usr/sbin/rsyslogd -n -iNONE
+taha        3415  0.0  0.0  98492  5732 ?        Ssl  12:21   0:00 /usr/libexec/gnome-session-ctl --monitor
+taha        3087  0.0  0.0  96096  5640 ?        Ssl  12:21   0:00 /usr/bin/pipewire -c filter-chain.conf
+taha       17356  0.0  0.0  19976  5580 pts/1    Ss   19:55   0:00 /usr/bin/bash
+taha        3560  0.0  0.0   8748  5264 ?        S    12:21   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --add
+taha       17377  300  0.0  21320  4740 pts/1    R+   19:58   0:00 ps aux --sort=-%mem
+avahi       1196  0.0  0.0   6752  4736 ?        Ss   12:21   0:00 avahi-daemon: running [taha-ThinkPad-T495s.local]
+taha        3047  0.0  0.0  23460  4208 ?        S    12:21   0:00 (sd-pam)
+taha        3078  0.0  0.0   7560  4040 ?        Ss   12:21   0:00 /usr/bin/mpris-proxy
+rtkit       1889  0.0  0.0  21872  3572 ?        SNsl 12:21   0:00 /usr/libexec/rtkit-daemon
+_chrony     1482  0.0  0.0  12120  3344 ?        S    12:21   0:00 /usr/sbin/chronyd -n -F 1
+uuidd      12835  0.0  0.0  19388  3304 ?        Ss   12:52   0:00 /usr/sbin/uuidd --socket-activation --cont-clock
+root        1276  0.0  0.0  18344  3260 ?        Ss   12:21   0:00 /usr/sbin/cron -f -P
+root        3174  0.0  0.0   2792  2208 ?        Ss   12:21   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+root        1207  0.0  0.0   2888  1928 ?        Ss   12:21   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+avahi       1354  0.0  0.0   6560  1664 ?        S    12:21   0:00 avahi-daemon: chroot helper
+root           2  0.0  0.0      0     0 ?        S    12:21   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    12:21   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/0:0H-kblockd]
+root          13  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        S    12:21   0:00 [ksoftirqd/0]
+root          15  0.0  0.0      0     0 ?        I    12:21   0:14 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    12:21   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          17  0.0  0.0      0     0 ?        S    12:21   0:00 [rcu_exp_gp_kthread_worker]
+root          18  0.0  0.0      0     0 ?        S    12:21   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    12:21   0:00 [kprobe-optimizer]
+root          20  0.0  0.0      0     0 ?        S    12:21   0:00 [idle_inject/0]
+root          21  0.0  0.0      0     0 ?        S    12:21   0:00 [cpuhp/0]
+root          22  0.0  0.0      0     0 ?        S    12:21   0:00 [cpuhp/2]
+root          23  0.0  0.0      0     0 ?        S    12:21   0:00 [idle_inject/2]
+root          24  0.0  0.0      0     0 ?        S    12:21   0:00 [migration/2]
+root          25  0.0  0.0      0     0 ?        S    12:21   0:00 [ksoftirqd/2]
+root          27  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/2:0H-kblockd]
+root          28  0.0  0.0      0     0 ?        S    12:21   0:00 [cpuhp/4]
+root          29  0.0  0.0      0     0 ?        S    12:21   0:00 [idle_inject/4]
+root          30  0.0  0.0      0     0 ?        S    12:21   0:00 [migration/4]
+root          31  0.0  0.0      0     0 ?        S    12:21   0:00 [ksoftirqd/4]
+root          33  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/4:0H-kblockd]
+root          34  0.0  0.0      0     0 ?        S    12:21   0:00 [cpuhp/6]
+root          35  0.0  0.0      0     0 ?        S    12:21   0:00 [idle_inject/6]
+root          36  0.0  0.0      0     0 ?        S    12:21   0:00 [migration/6]
+root          37  0.0  0.0      0     0 ?        S    12:21   0:00 [ksoftirqd/6]
+root          39  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/6:0H-kblockd]
+root          40  0.0  0.0      0     0 ?        S    12:21   0:00 [cpuhp/1]
+root          41  0.0  0.0      0     0 ?        S    12:21   0:00 [idle_inject/1]
+root          42  0.0  0.0      0     0 ?        S    12:21   0:00 [migration/1]
+root          43  0.0  0.0      0     0 ?        S    12:21   0:00 [ksoftirqd/1]
+root          45  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/1:0H]
+root          46  0.0  0.0      0     0 ?        S    12:21   0:00 [cpuhp/3]
+root          47  0.0  0.0      0     0 ?        S    12:21   0:00 [idle_inject/3]
+root          48  0.0  0.0      0     0 ?        S    12:21   0:00 [migration/3]
+root          49  0.0  0.0      0     0 ?        S    12:21   0:00 [ksoftirqd/3]
+root          51  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/3:0H-kblockd]
+root          52  0.0  0.0      0     0 ?        S    12:21   0:00 [cpuhp/5]
+root          53  0.0  0.0      0     0 ?        S    12:21   0:00 [idle_inject/5]
+root          54  0.0  0.0      0     0 ?        S    12:21   0:00 [migration/5]
+root          55  0.0  0.0      0     0 ?        S    12:21   0:00 [ksoftirqd/5]
+root          57  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/5:0H-kblockd]
+root          58  0.0  0.0      0     0 ?        S    12:21   0:00 [cpuhp/7]
+root          59  0.0  0.0      0     0 ?        S    12:21   0:00 [idle_inject/7]
+root          60  0.0  0.0      0     0 ?        S    12:21   0:00 [migration/7]
+root          61  0.0  0.0      0     0 ?        S    12:21   0:00 [ksoftirqd/7]
+root          63  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/7:0H-kblockd]
+root          64  0.0  0.0      0     0 ?        S    12:21   0:00 [kdevtmpfs]
+root          65  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-inet_frag_wq]
+root          66  0.0  0.0      0     0 ?        I    12:21   0:00 [rcu_tasks_kthread]
+root          67  0.0  0.0      0     0 ?        I    12:21   0:00 [rcu_tasks_rude_kthread]
+root          68  0.0  0.0      0     0 ?        S    12:21   0:00 [kauditd]
+root          69  0.0  0.0      0     0 ?        S    12:21   0:00 [khungtaskd]
+root          70  0.0  0.0      0     0 ?        S    12:21   0:00 [oom_reaper]
+root          73  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-writeback]
+root          74  0.0  0.0      0     0 ?        S    12:21   0:01 [kcompactd0]
+root          75  0.0  0.0      0     0 ?        SN   12:21   0:00 [ksmd]
+root          76  0.0  0.0      0     0 ?        SN   12:21   0:00 [khugepaged]
+root          77  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-kblockd]
+root          78  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-blkcg_punt_bio]
+root          79  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-kintegrityd]
+root          80  0.0  0.0      0     0 ?        S    12:21   0:02 [irq/9-acpi]
+root          83  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-tpm_dev_wq]
+root          84  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-ata_sff]
+root          85  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-md_bitmap]
+root          86  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-md_llbitmap_io]
+root          87  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-md_llbitmap_unplug]
+root          88  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-edac-poller]
+root          89  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-devfreq_wq]
+root          91  0.0  0.0      0     0 ?        S    12:21   0:00 [watchdogd]
+root          92  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-quota_events_unbound]
+root          94  0.0  0.0      0     0 ?        S    12:21   0:00 [irq/25-AMD-Vi]
+root          95  0.0  0.0      0     0 ?        S    12:21   0:00 [kswapd0]
+root          96  0.0  0.0      0     0 ?        S    12:21   0:00 [ecryptfs-kthread]
+root          97  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-kthrotld]
+root          99  0.0  0.0      0     0 ?        S    12:21   0:00 [irq/26-aerdrv]
+root         100  0.0  0.0      0     0 ?        S    12:21   0:00 [irq/26-pciehp]
+root         101  0.0  0.0      0     0 ?        S    12:21   0:00 [irq/27-aerdrv]
+root         102  0.0  0.0      0     0 ?        S    12:21   0:00 [irq/28-aerdrv]
+root         103  0.0  0.0      0     0 ?        S    12:21   0:00 [irq/30-aerdrv]
+root         104  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-acpi_thermal_pm]
+root         110  0.0  0.0      0     0 ?        S    12:21   0:00 [hwrng]
+root         111  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-mld]
+root         112  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-ipv6_addrconf]
+root         113  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-kstrp]
+root         128  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-charger_manager]
+root         326  0.0  0.0      0     0 ?        S    12:21   0:00 [ccp-1-q2]
+root         327  0.0  0.0      0     0 ?        S    12:21   0:00 [ccp-1-q3]
+root         328  0.0  0.0      0     0 ?        S    12:21   0:00 [ccp-1-q4]
+root         330  0.0  0.0      0     0 ?        S    12:21   0:00 [scsi_eh_0]
+root         331  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-scsi_tmf_0]
+root         334  0.0  0.0      0     0 ?        S    12:21   0:00 [scsi_eh_1]
+root         335  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-scsi_tmf_1]
+root         358  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/7:1H-kblockd]
+root         374  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/2:1H-kblockd]
+root         378  0.0  0.0      0     0 ?        S    12:21   0:00 [jbd2/sda4-8]
+root         379  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-ext4-rsv-conversion]
+root         394  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/6:1H-kblockd]
+root         421  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/5:1H-kblockd]
+root         447  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/4:1H-kblockd]
+root         456  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/0:1H-kblockd]
+root         461  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/3:1H-kblockd]
+root         484  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/1:1H-kblockd]
+root         491  0.0  0.0      0     0 ?        S    12:21   0:00 [psimon]
+root         574  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-ipmi-msghandler-remove-wq]
+root         611  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-ktpacpid]
+root         616  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-cfg80211]
+root         621  0.0  0.0      0     0 ?        S    12:21   0:02 [irq/65-iwlwifi]
+root         887  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-amdgpu-reset-dev]
+root         996  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-ttm]
+root        1091  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-amdgpu_dm_hpd_rx_offload_wq]
+root        1092  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-amdgpu_dm_hpd_rx_offload_wq]
+root        1093  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-amdgpu_dm_hpd_rx_offload_wq]
+root        1094  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-amdgpu_dm_hpd_rx_offload_wq]
+root        1095  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-dm_vblank_control_workqueue]
+root        1138  0.0  0.0      0     0 ?        S    12:21   0:00 [card1-crtc0]
+root        1141  0.0  0.0      0     0 ?        S    12:21   0:00 [card1-crtc1]
+root        1142  0.0  0.0      0     0 ?        S    12:21   0:00 [card1-crtc2]
+root        1143  0.0  0.0      0     0 ?        S    12:21   0:00 [card1-crtc3]
+root        1149  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-gfx]
+root        1150  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-comp_1.0.0]
+root        1151  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-comp_1.1.0]
+root        1152  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-comp_1.2.0]
+root        1153  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-comp_1.3.0]
+root        1154  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-comp_1.0.1]
+root        1155  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-comp_1.1.1]
+root        1156  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-comp_1.2.1]
+root        1157  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-comp_1.3.1]
+root        1158  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-sdma0]
+root        1159  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-vcn_dec]
+root        1160  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-vcn_enc0]
+root        1161  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-vcn_enc1]
+root        1162  0.0  0.0      0     0 ?        I<   12:21   0:00 [kworker/R-jpeg_dec]
+root        1748  0.0  0.0      0     0 ?        S    12:21   0:00 [psimon]
+root        1983  0.0  0.0      0     0 ?        S<   12:21   0:00 [krfcommd]
+taha       13382  0.0  0.0      0     0 ?        Z    12:55   0:00 [sd_espeak-ng-mb] <defunct>
+root       14096  0.0  0.0      0     0 ?        I    13:30   0:00 [kworker/1:2-events]
+root       14174  0.0  0.0      0     0 ?        I    13:47   0:00 [kworker/3:1-events]
+root       14482  0.0  0.0      0     0 ?        I    13:55   0:00 [kworker/7:5-mm_percpu_wq]
+root       14486  0.0  0.0      0     0 ?        I    16:13   0:00 [kworker/2:2-events]
+root       14488  0.0  0.0      0     0 ?        I    16:13   0:00 [kworker/5:3-events]
+root       14489  0.0  0.0      0     0 ?        I    16:13   0:00 [kworker/6:3-mm_percpu_wq]
+root       15933  0.0  0.0      0     0 ?        I    18:10   0:00 [kworker/3:2]
+root       15975  0.0  0.0      0     0 ?        I    18:11   0:00 [kworker/4:1-mm_percpu_wq]
+root       16658  0.0  0.0      0     0 ?        I    19:04   0:00 [kworker/2:1-events]
+root       16755  0.0  0.0      0     0 ?        I    19:19   0:00 [kworker/0:2-events]
+root       16782  0.2  0.0      0     0 ?        I    19:24   0:04 [kworker/u32:0-flush-8:0]
+root       16784  0.1  0.0      0     0 ?        I    19:24   0:02 [kworker/u32:2-flush-8:0]
+root       16877  0.0  0.0      0     0 ?        I    19:30   0:00 [kworker/5:1-cgroup_free]
+root       16882  0.1  0.0      0     0 ?        I    19:37   0:02 [kworker/u32:3-dm_vblank_control_workqueue]
+root       16942  0.0  0.0      0     0 ?        I<   19:42   0:00 [kworker/u33:4-ttm]
+root       16943  0.0  0.0      0     0 ?        I<   19:42   0:00 [kworker/u33:5-ttm]
+root       16944  0.0  0.0      0     0 ?        I<   19:42   0:00 [kworker/u33:6-ttm]
+root       16945  0.0  0.0      0     0 ?        I<   19:42   0:00 [kworker/u33:7-ttm]
+root       16946  0.0  0.0      0     0 ?        I<   19:42   0:00 [kworker/u33:8-ttm]
+root       16947  0.0  0.0      0     0 ?        I<   19:42   0:00 [kworker/u33:9-ttm]
+root       16948  0.0  0.0      0     0 ?        I<   19:42   0:00 [kworker/u33:11-ttm]
+root       17102  0.0  0.0      0     0 ?        I    19:47   0:00 [kworker/7:1-cgroup_offline]
+root       17104  0.0  0.0      0     0 ?        I    19:47   0:00 [kworker/1:0]
+root       17119  0.0  0.0      0     0 ?        I    19:50   0:00 [kworker/6:0-cgroup_free]
+root       17127  0.0  0.0      0     0 ?        I    19:51   0:00 [kworker/0:0-events]
+root       17155  0.0  0.0      0     0 ?        I<   19:51   0:00 [kworker/u33:0-ttm]
+root       17156  0.0  0.0      0     0 ?        I<   19:51   0:00 [kworker/u33:1-ttm]
+root       17159  0.0  0.0      0     0 ?        I<   19:51   0:00 [kworker/u33:2-ttm]
+root       17183  0.2  0.0      0     0 ?        I    19:51   0:00 [kworker/u32:5-sdma0]
+root       17186  0.0  0.0      0     0 ?        I    19:53   0:00 [kworker/4:2-events]
+root       17272  0.0  0.0      0     0 ?        I    19:54   0:00 [kworker/2:0-events]
+root       17345  0.0  0.0      0     0 ?        I<   19:55   0:00 [kworker/u33:3-ttm]
+root       17346  0.0  0.0      0     0 ?        I<   19:55   0:00 [kworker/u33:10-ttm]
+root       17347  0.0  0.0      0     0 ?        I<   19:55   0:00 [kworker/u33:12-ttm]
+root       17348  0.0  0.0      0     0 ?        I<   19:55   0:00 [kworker/u33:13]
+root       17355  0.0  0.0      0     0 ?        I    19:55   0:00 [kworker/6:1-events]
+taha@taha-ThinkPad-T495s:~/linux_lab$ ps aux --sort=-%mem | head -n 6
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+taha       15724  2.3  2.2 2410764 306800 ?      Sl   17:34   3:25 /usr/bin/papers /home/taha/Downloads/Linux_Shell_Lab3_Student.pdf
+taha        3496  2.7  2.1 7156508 290292 ?      Ssl  12:21  12:33 /usr/bin/gnome-shell --mode=ubuntu
+taha       13813  0.4  1.0 2609632 146472 ?      Sl   13:07   1:50 /usr/bin/ptyxis --gapplication-service
+taha        3882  0.0  0.8 1349132 120500 ?      Ssl  12:21   0:12 /usr/libexec/xdg-desktop-portal-gnome
+taha       17028  0.1  0.6 3226508 86584 ?       Sl   19:46   0:01 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com/app
+taha@taha-ThinkPad-T495s:~/linux_lab$ ps aux | wc -l 
+296
+taha@taha-ThinkPad-T495s:~/linux_lab$ top
+
+top - 20:04:45 up  7:43,  1 user,  load average: 0.21, 0.21, 0.14
+Tasks: 294 total,   1 running, 292 sleeping,   0 stopped,   1 zombie
+%Cpu(s):  2.1 us,  1.0 sy,  0.0 ni, 96.8 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st 
+MiB Mem :  13376.7 total,   9849.3 free,   1649.9 used,   2217.5 buff/cache     
+MiB Swap:   4096.0 total,   4096.0 free,      0.0 used.  11726.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                        
+   3496 taha      20   0 7156756 290480 161768 S  13.2   2.1  13:04.32 gnome-shell                                                                                                    
+  15724 taha      20   0 2421236 339048 110952 S  10.9   2.5   3:45.36 papers                                                                                                         
+  16882 root      20   0       0      0      0 I   1.0   0.0   0:03.61 kworker/u32:3-events_unbound                                                                                   
+  17448 taha      20   0   22096   6372   4200 R   0.7   0.0   0:00.40 top                                                                                                            
+     15 root      20   0       0      0      0 I   0.3   0.0   0:15.16 rcu_preempt                                                                                                    
+    378 root      20   0       0      0      0 S   0.3   0.0   0:00.59 jbd2/sda4-8                                                                                                    
+  13813 taha      20   0 2611000 148104 108324 S   0.3   1.1   2:00.09 ptyxis                                                                                                         
+  17409 root      20   0       0      0      0 I   0.3   0.0   0:01.09 kworker/u32:1-gfx                                                                                              
+      1 root      20   0   26172  16624  11152 S   0.0   0.1   0:06.67 systemd                                                                                                        
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd                                                                                                       
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release                                                                                         
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp                                                                                               
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq                                                                                              
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim                                                                                   
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq                                                                                         
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns                                                                                                
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd                                                                                           
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq                                                                                         
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.15 ksoftirqd/0                                                                                                    
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_worker/0                                                                                
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.02 rcu_exp_gp_kthread_worker                                                                                      
+     18 root      rt   0       0      0      0 S   0.0   0.0   0:00.15 migration/0                                                                                                    
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kprobe-optimizer                                                                                               
+     20 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0                                                                                                  
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                                                                                        
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/2                                                                                                        
+     23 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/2                                                                                                  
+     24 root      rt   0       0      0      0 S   0.0   0.0   0:00.13 migration/2                                                                                                    
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.04 ksoftirqd/2                                                                                                    
+     27 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/2:0H-kblockd                                                                                           
+     28 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/4                                                                                                        
+     29 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/4                                                                                                  
+     30 root      rt   0       0      0      0 S   0.0   0.0   0:00.13 migration/4                                                                                                    
+taha@taha-ThinkPad-T495s:~/linux_lab$ htop
+Command 'htop' not found, but can be installed with:
+sudo apt install htop
+taha@taha-ThinkPad-T495s:~/linux_lab$ sleep 120&
+[1] 17516
+taha@taha-ThinkPad-T495s:~/linux_lab$ sleep 120&
+[2] 17518
+taha@taha-ThinkPad-T495s:~/linux_lab$ sleep 120&
+[3] 17521
+taha@taha-ThinkPad-T495s:~/linux_lab$ jobs
+[1]   Running                    sleep 120 &
+[2]-  Running                    sleep 120 &
+[3]+  Running                    sleep 120 &
+taha@taha-ThinkPad-T495s:~/linux_lab$ kill %2
+[2]-  Terminated                 sleep 120
+taha@taha-ThinkPad-T495s:~/linux_lab$ jobs
+[1]-  Running                    sleep 120 &
+[3]+  Running                    sleep 120 &
+taha@taha-ThinkPad-T495s:~/linux_lab$ sllep 200
+Command 'sllep' not found, did you mean:
+  command 'sleep' from deb coreutils-from-gnu (0.0.0~ubuntu25)
+  command 'sleep' from deb coreutils-from-uutils (0.0.0~ubuntu25)
+  command 'sleep' from deb coreutils-from-busybox (0.0.0~ubuntu25)
+  command 'sleep' from deb coreutils-from-toybox (0.0.0~ubuntu25)
+Try: sudo apt install <deb name>
+taha@taha-ThinkPad-T495s:~/linux_lab$ sleep 200
+^C
+taha@taha-ThinkPad-T495s:~/linux_lab$ sleep 200
+^Z
+[4]+  Stopped                    sleep 200
+[1]   Done                       sleep 120
+taha@taha-ThinkPad-T495s:~/linux_lab$ bg
+[4]+ sleep 200 &
+taha@taha-ThinkPad-T495s:~/linux_lab$ fg
+sleep 200
+^Z
+[4]+  Stopped                    sleep 200
+taha@taha-ThinkPad-T495s:~/linux_lab$ nano procinfo.sh 
+[3]-  Done                       sleep 120
+taha@taha-ThinkPad-T495s:~/linux_lab$ chmod +x procinfo.sh
+taha@taha-ThinkPad-T495s:~/linux_lab$ ./pricinfo.sh
+bash: ./pricinfo.sh: No such file or directory
+taha@taha-ThinkPad-T495s:~/linux_lab$ ./procinfo.sh
+usage : ./procinfo.sh <process_name >
+taha@taha-ThinkPad-T495s:~/linux_lab$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           2.7G  3.4M  2.7G   1% /run
+/dev/sda4        49G   12G   35G  25% /
+tmpfs           6.6G  4.0K  6.6G   1% /dev/shm
+efivarfs        154K   84K   66K  57% /sys/firmware/efi/efivars
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           6.6G  240K  6.6G   1% /tmp
+/dev/sda1        96M   32M   65M  33% /boot/efi
+tmpfs           1.4G  4.1M  1.4G   1% /run/user/1000
+/dev/sda3       123G   71G   53G  58% /run/media/taha/01DD6D512E27C600
+/dev/sda6        66G   17G   49G  26% /run/media/taha/01DD6D5026B3C5F0
+taha@taha-ThinkPad-T495s:~/linux_lab$ du -sh ~
+713M	/home/taha
+taha@taha-ThinkPad-T495s:~/linux_lab$ df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda4        49G   12G   35G  25% /
+taha@taha-ThinkPad-T495s:~/linux_lab$ 
+
